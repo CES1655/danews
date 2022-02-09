@@ -1,0 +1,24 @@
+// Modules
+// ==================
+@import "module/variables";
+@import "module/reset";
+@import "module/classes";
+@import "module/media-queries";
+@import "module/base";
+
+
+// Generic
+// ==================
+body {
+
+}
+
+.container {
+    width: 100%;
+    padding-left: calc(50% - var(--container)/ 2);
+    padding-right: calc(50% - var(--container)/ 2);
+}
+
+// Pages
+// ==================
+@import "pages/home";
