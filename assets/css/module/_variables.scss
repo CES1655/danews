@@ -1,6 +1,14 @@
 :root {
-    --primary:;
-    --error:;
-
+    --primary: #0093D3;
+    --secondary: #34283C;
+    --yellow: #F0CD24;
+    --dark: #2D2D2D;
+    --white: #fff;
     --container: 1330px;
+
+    
+    @include xs {
+        --container-padding: 20px;
+        --container-width: calc(100vw - var(--container-padding) * 2);
+    }
 }
