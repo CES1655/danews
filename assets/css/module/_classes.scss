@@ -1,0 +1,19 @@
+.newsletter_submit {
+    display: inline-flex;
+    background-color: #34283c;
+    height: 30px;
+    width: 120px;
+    margin-left: -2px;
+
+    .img_btn {
+        display: flex;
+        padding-top: 3%;
+        margin-left: 10%;
+    }
+    .btn_txt {
+        display: flex;
+        color: white;
+        margin-top: 7px;
+        margin-left: 2px;
+    }
+}

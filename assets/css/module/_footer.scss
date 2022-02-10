@@ -1,0 +1,222 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    width: 100%;
+
+    .border {
+        height: 3px;
+        width: 80%;
+        margin-left: 10%;
+        margin-top: 10%;
+        background: #34283c;
+        position: relative;
+    }
+    h5 {
+        @include xs {
+            display: flex;
+            flex-direction: row;
+        }
+
+        @include sm {
+            display: inline-flex;
+            flex-direction: inherit;
+        }
+
+        @include md {
+            display: inline-flex;
+            flex-direction: inherit;
+        }
+    }
+    .footer-columns {
+        margin-left: 20px;
+        margin-top: 5%;
+        display: flex;
+        flex-flow: row;
+        width: 100%;
+
+        @include xs {
+            flex-flow: column;
+            margin-left: 50px;
+            column-width: 100%;
+        }
+
+        @include sm {
+            flex-flow: column;
+            margin-left: 50px;
+            column-width: 100%;
+        }
+
+        @include md {
+            flex-flow: row;
+            margin-left: 50px;
+            column-width: 100%;
+        }
+
+        .footer-column {
+            @include xs {
+                margin-top: 25px;
+                width: 100%;
+            }
+
+            @include sm {
+                margin-top: 25px;
+                max-width: 100%;
+            }
+        }
+        .footer-column:not(:last-child) {
+            margin-right: 50px;
+            border-right: solid;
+            border-width: 1px;
+
+            @include md {
+                border: none;
+            }
+
+            @include sm {
+                border: none;
+            }
+
+            @include xs {
+                border: none;
+            }
+        }
+        #logo {
+            height: 45px;
+        }
+    }
+    .liens-rapides > li {
+        margin-top: 10px;
+    }
+    #danews_txt {
+        font-weight: bolder;
+
+        @include xs {
+            margin-left: 5px;
+        }
+    }
+
+    #rapides_txt {
+        font-weight: bolder;
+
+        @include xs {
+            margin-left: 5px;
+        }
+    }
+    #newsletter_txt {
+        font-weight: bolder;
+
+        @include xs {
+            margin-left: 5px;
+        }
+    }
+    .form_newsletter {
+        display: inline-flex;
+        margin-top: 70px;
+
+        @include sm {
+            margin-top: 15px;
+            display: flex;
+        }
+
+        @include xs {
+            margin-top: 15px;
+        }
+    }
+}
+#email {
+    padding-left: 5px;
+
+    @include sm {
+        display: flex;
+        max-width: 50%;
+    }
+}
+
+.global_sociaux {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+
+    .sociaux {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 5px;
+    }
+    .sociaux > a {
+        margin-left: 10px;
+    }
+}
+
+.liens-rapides {
+    margin-top: 10px;
+}
+.footer-w3 {
+    max-width: 35%;
+    width: 100%;
+
+    @include sm {
+    }
+    @include xs {
+        max-width: 100%;
+    }
+}
+
+.footer-w2 {
+    max-width: 10%;
+    width: 100%;
+
+    @include sm {
+    }
+
+    @include xs {
+        max-width: 100%;
+    }
+}
+#bio_txt {
+    margin-top: 10px;
+}
+.border-bottom-footer {
+    height: 1px;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 20px;
+    background: black;
+    position: relative;
+}
+.footer-mention {
+    display: flex;
+    margin-top: 20px;
+    margin-left: 20px;
+    > p {
+        @include xs {
+            font-size: smaller;
+        }
+    }
+
+    @include xs {
+        padding-left: 20px;
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+.footer-mention-right {
+    display: flex;
+    margin-left: auto;
+    @include xs {
+    }
+
+    #mentions_legales {
+        margin-left: 10px;
+    }
+    @include xs {
+        margin-left: 60px;
+        font-size: smaller;
+    }
+
+    @include sm {
+        margin-left: auto;
+    }
+}
