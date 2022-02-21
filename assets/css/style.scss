@@ -7,11 +7,14 @@
 @import "module/reset";
 @import "module/classes";
 @import "module/base";
+@import "module/form";
 
 // Composants
 // ==================
 @import "module/header";
 @import "module/footer";
+@import "module/pagination";
+
 
 // Generic
 // ==================
@@ -24,6 +27,8 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    transition: all 1s;
+    scroll-behavior: smooth !important;
 
     @include sm {
         background: none;
@@ -69,3 +74,4 @@ main {
 // Pages
 // ==================
 @import "pages/home";
+@import "pages/formations";

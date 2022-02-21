@@ -35,13 +35,11 @@ footer {
 
         @include xs {
             flex-flow: column;
-            margin-left: 50px;
             column-width: 100%;
         }
 
         @include sm {
             flex-flow: column;
-            margin-left: 50px;
             column-width: 100%;
         }
 
