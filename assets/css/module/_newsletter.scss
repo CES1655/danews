@@ -1,0 +1,57 @@
+.newsletter_block {
+    background-color: #34283c;
+    width: 424px;
+    height: 312px;
+
+    .newsletter_block_title {
+        text-align: center;
+        font-size: x-large;
+        font-weight: bold;
+        color: white;
+        padding-top: 10%;
+
+        @include xs {
+            padding-right: 14%;
+        }
+    }
+    .newsletter_block_txt {
+        text-align: center;
+        padding-top: 3%;
+        padding-left: 10%;
+        padding-right: 10%;
+        color: white;
+
+        @include xs {
+            padding-left: 5%;
+            text-align: inherit;
+        }
+    }
+    .newsletter_btn {
+        display: inline-grid;
+        color: #34283c;
+        background-color: white;
+        text-align: center;
+        width: 80%;
+        padding: 5%;
+        margin-left: 40px;
+        margin-top: 10%;
+        transition: 0.3s;
+
+        &:hover{
+            background-color : #F0CD24;
+        }
+
+        @include xs {
+            margin-left: 15px;
+            margin-top: 5%;
+        }
+
+        @include md {
+            margin-top: 7%;
+        }
+
+        > a {
+            font-size: x-large;
+        }
+    }
+}
