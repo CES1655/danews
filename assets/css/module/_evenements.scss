@@ -1,0 +1,53 @@
+
+.container_evt{
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  align-items : flex-end;
+  margin-bottom : 10%;
+
+}
+.evenements_block{
+  background-color: #F7F4F4;
+  padding : 10px;
+  width: 90%;
+  transition: 0.3s;
+  &:hover{
+    background-color: #EEEE;
+  }
+  @include xs {
+    width:100%;
+  }
+}
+.bio_evt {
+  font-size: small;
+}
+.evenement_action {
+    display: flex; 
+    justify-content: space-between;
+    p{
+
+        background-color: #0093D3;
+        height: 30px;
+        padding:5px;
+        color:white;
+        width: 25%;
+        transform: translate(-52px, -10px);
+       
+        @include xs{
+          display:flex;
+          transform: translate(-10px, -10px);
+          font-size: small;
+          padding:7px;
+        }
+    } 
+
+  }
+.publicite {
+  margin-top:10%;
+  background-image: url("/assets/img/publicite-banner.svg");
+  height: 600px; 
+  padding: 10px;
+
+
+}
