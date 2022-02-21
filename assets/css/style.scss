@@ -8,11 +8,13 @@
 @import "module/classes";
 @import "module/base";
 
+
 // Composants
 // ==================
 @import "module/header";
 @import "module/footer";
-
+@import "module/newsletter";
+@import "module/evenements";
 // Generic
 // ==================
 body {
