@@ -1,0 +1,109 @@
+// Formulaire
+// ==================
+.form-element {
+    margin-bottom: 20px;
+}
+
+.more-label {
+    visibility: hidden;
+}
+
+.form-field {
+    display: block;
+    width: 100%;
+
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+
+    background: #fafafa;
+    background-repeat: no-repeat;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
+    background-position: right 0.75rem center;
+    background-size: 20px 16px;
+    appearance: none;
+
+    color: #73767f;
+    border: 1px solid #eaeaea;
+    border-radius: 4px;
+    padding: 1.188rem 0.938rem;
+
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+
+    &:focus {
+        border-color: rgba(0, 148, 211, 0.725);
+        outline: 0;
+        box-shadow: 0 0 0 0.25rem rgba(0, 148, 211, 0.173);
+    }
+
+    &::placeholder {
+        opacity: .6;
+    }
+}
+
+.form-btn {
+    position: relative;
+    display: inline-block;
+
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+    line-height: 26px;
+    padding: 1.188rem 1.188rem;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 4px;
+
+    transition: all 0.3s ease 0s;
+
+    &-center {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    @include sm {
+        width: 100%;
+        margin-top: 1.2rem;
+    }
+}
+
+.bg {
+    color: var(--white);
+
+    &-primary {
+        background-color: var(--primary);
+
+        svg {
+            stroke: var(--white);
+            transform: rotate(90deg);
+            transition: all 0.3s ease 0s;
+        }
+
+        &:hover {
+            svg {
+                transform: rotate(-149deg);
+                transition: all 0.3s ease 0s;
+            }
+        }
+    }
+}
+
+// .form-control {
+//     display: block;
+//     width: 100%;
+//     padding: 0.375rem 0.75rem;
+//     font-size: 1rem;
+//     font-weight: 400;
+//     line-height: 1.5;
+//     color: #212529;
+//     background-color: #fff;
+//     background-clip: padding-box;
+//     border: 1px solid #ced4da;
+//     -webkit-appearance: none;
+//     -moz-appearance: none;
+//     appearance: none;
+//     border-radius: 0.25rem;
+//     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+// }

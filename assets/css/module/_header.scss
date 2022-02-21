@@ -67,7 +67,6 @@
         .menu__item {
             color: var(--primary);
             margin: 0 0 20px 0;
-            //mix-blend-mode: difference;
             z-index: 10;
 
             &:first-child {
@@ -149,6 +148,7 @@
         font-weight: 700;
         color: var(--white);
 
+        &.active,
         &:hover {
             color: var(--yellow);
             transition: all .2s ease-in;

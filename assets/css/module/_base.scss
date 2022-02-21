@@ -12,6 +12,10 @@
         flex-direction: column;
     }
 
+    @include md {
+        flex-direction: column;
+    }
+
     .content__left {
         flex: 2;
         margin-right: 20px;
@@ -19,11 +23,12 @@
         @include sm {
             flex: 1;
             margin-right: 0;
+            margin-bottom: 20px;
         }
     }
 
     .content__right {
         flex: 1;
-       
+        //background-color: red;
     }
 }

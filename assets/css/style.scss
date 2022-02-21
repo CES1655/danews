@@ -7,14 +7,17 @@
 @import "module/reset";
 @import "module/classes";
 @import "module/base";
+@import "module/form";
 
 
 // Composants
 // ==================
 @import "module/header";
 @import "module/footer";
+@import "module/pagination";
 @import "module/newsletter";
 @import "module/evenements";
+
 // Generic
 // ==================
 body {
@@ -26,6 +29,8 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    transition: all 1s;
+    scroll-behavior: smooth !important;
 
     @include sm {
         background: none;
@@ -68,10 +73,7 @@ main {
     flex-grow: 1;
 }
 
-footer {
-    background-color: orange;
-}
-
 // Pages
 // ==================
 @import "pages/home";
+@import "pages/formations";

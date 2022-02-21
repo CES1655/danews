@@ -1,0 +1,50 @@
+// Formulaire
+// ==================
+.pagination {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+
+    @include sm {
+        flex-flow: column nowrap;
+    }
+
+    &_menu {
+        display: flex;
+        flex-direction: row;
+        white-space: nowrap;
+    }
+
+    &_button {
+        border: 1px solid #D5E3EC;
+        border-radius: 3px;
+        padding: .5rem .75rem;
+        margin-right: 1rem;
+        font-weight: 500;
+        cursor: pointer;
+        
+        &.active {
+            background-color: #D5E3EC;
+        }
+
+        &.disabled {
+            opacity: .6;
+            cursor: not-allowed;
+        }
+
+        @include sm {
+            padding: .2rem .3rem;
+        }
+    }
+}
+
+@include sm {
+    a.pagination_button {
+        display: none;
+    }
+}
+
+.page_link {
+    padding: .5rem .75rem;
+}
