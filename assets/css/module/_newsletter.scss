@@ -1,29 +1,35 @@
+// Newsletter
+// ==================
+.newsletter {
+    width: 100%;
+}
+
 .newsletter_block {
-    background-color: #34283c;
-    width: 424px;
-    height: 312px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--secondary);
+    width: 100%;
+    padding: 1.875rem 1.25rem;
 
     .newsletter_block_title {
         text-align: center;
         font-size: x-large;
         font-weight: bold;
         color: white;
-        padding-top: 10%;
-
-        @include xs {
-            padding-right: 14%;
-        }
     }
     .newsletter_block_txt {
         text-align: center;
         padding-top: 3%;
-        padding-left: 10%;
-        padding-right: 10%;
         color: white;
 
         @include xs {
-            padding-left: 5%;
-            text-align: inherit;
+            font-size: .7rem;
+        }
+
+        @include md {
+            font-size: .7rem;
         }
     }
     .newsletter_btn {
@@ -33,7 +39,6 @@
         text-align: center;
         width: 80%;
         padding: 5%;
-        margin-left: 40px;
         margin-top: 10%;
         transition: 0.3s;
 
@@ -42,12 +47,12 @@
         }
 
         @include xs {
-            margin-left: 15px;
             margin-top: 5%;
         }
 
         @include md {
             margin-top: 7%;
+            font-size: .8rem;
         }
 
         > a {

@@ -45,7 +45,6 @@ footer {
 
         @include md {
             flex-flow: row;
-            margin-left: 50px;
             column-width: 100%;
         }
 
@@ -58,6 +57,16 @@ footer {
             @include sm {
                 margin-top: 25px;
                 max-width: 100%;
+            }
+
+            @include md {
+                &:nth-child(2n) {
+                    margin-right: 1.6rem;
+                }
+
+                &:nth-child(3) {
+                    display: none;
+                }
             }
 
             &:not(:first-child) {
@@ -174,8 +183,6 @@ footer {
     max-width: 35%;
     width: 100%;
 
-    @include sm {
-    }
     @include xs {
         max-width: 100%;
     }
@@ -185,9 +192,6 @@ footer {
     max-width: 13%;
     width: 100%;
 
-    @include sm {
-    }
-
     @include xs {
         max-width: 100%;
     }
@@ -196,6 +200,10 @@ footer {
 .bio_txt {
     margin-top: 10px;
     font-size: 0.9rem;
+
+    @include md {
+        font-size: .75rem;
+    }
 }
 
 .border-bottom-footer {
