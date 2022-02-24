@@ -1,3 +1,5 @@
+// Page formations
+// ==================
 .block-row {
     display: flex;
     flex-direction: row;
@@ -7,6 +9,11 @@
     @include sm {
         flex-direction: column;
         margin-bottom: 1.3rem;
+    }
+
+    @include md {
+        flex-direction: column;
+        align-items: initial;
     }
 }
 
@@ -18,6 +25,10 @@
         width: 100%;
         margin: 0;
     }
+}
+
+#a-la-une a:last-child .article__next_box {
+    border-bottom: none;
 }
 
 .article__next_box {

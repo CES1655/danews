@@ -9,8 +9,10 @@
 .evenements_block {
   background-color: #f7f4f4;
   padding: 10px;
+  margin-bottom: 1.25rem;
   width: 90%;
   transition: 0.3s;
+
   &:hover {
     background-color: #eeee;
   }

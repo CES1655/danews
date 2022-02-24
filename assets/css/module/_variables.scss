@@ -1,9 +1,21 @@
 :root {
+    //Color
     --primary: #0093D3;
     --secondary: #34283C;
     --yellow: #F0CD24;
     --dark: #2D2D2D;
     --white: #fff;
+    --linear-gradient: linear-gradient(180deg, #C874E0 0%, #C830CF 100%);
+    
+    // card
+    --card: #FAFAFA;
+    --border-card: #EAEAEA;
+    
+    // Color hover
+    --primary-hover: #047aad;
+    --linear-gradient-hover: linear-gradient(180deg, #a159b4 0%, #9d23a3 100%);
+    
+    // utilitaire
     --container: 1330px;
 
     
