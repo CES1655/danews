@@ -18,6 +18,10 @@
         align-items: center;
     }
 
+    @include md {
+        align-items: center;
+    }
+
     .logo {
         width: 100%;
         max-width: 339px;
@@ -64,6 +68,10 @@
         //animation: slide-out-top 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
         z-index: 100;
 
+        @include md {
+            top: 60%;
+        }
+
         .menu__item {
             color: var(--primary);
             margin: 0 0 20px 0;
@@ -104,6 +112,10 @@
         display: block;
     }
 
+    @include md {
+        display: block;
+    }
+
     .menu__line {
         display: block;
         height: 4px;
@@ -139,6 +151,10 @@
     border-radius: 20px;
 
     @include sm {
+        display: none;
+    }
+
+    @include md {
         display: none;
     }
 
@@ -194,6 +210,10 @@
             }
 
             @include sm {
+                font-size: .8rem;
+            }
+
+            @include md {
                 font-size: .8rem;
             }
         }

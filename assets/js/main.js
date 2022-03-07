@@ -1,3 +1,17 @@
+//========== Loader ==========
+onload = () => {
+    const loader = document.getElementById("loader");
+
+    setTimeout(() => {
+        loader.style.display = "none";
+    }, 2500);
+}
+
+// window.addEventListener("load", () => {
+//     const load = document.getElementById("loader");
+//     load.style.display = "none";
+// })
+
 //========== Show menu ==========
 const btnMenu = document.querySelector(".navigation_menu");
 const menu = document.querySelector(".menu_items");
