@@ -1,0 +1,79 @@
+//PAGE EVENEMENTS : 
+.webinars {
+    width: 100%;
+  }
+  .card-container {
+    display: grid;
+    grid-auto-rows: 400px; 
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); 
+    grid-gap: 1em;
+
+    @include sm {
+     
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+  }
+  .card{
+    margin-top: 20px;
+  }
+  .card a { /*5*/
+    color: #333; 
+    text-decoration: none;
+  }
+  .card:hover .card-image img { /*6*/
+    width: 160%;
+    filter: grayscale(0);
+  }
+  
+  .card-image {
+    height: 250px;/*1*/
+    position: relative;/*2*/
+    overflow: hidden;/*3*/
+  }
+  .card-image img {
+    width: 150%;/*4*/
+      /*5 - Méthode de centrage en fonction de la taille de l'image */
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    filter: grayscale(1);/*6*/
+      /*7 - Transition */
+    transition-property: filter width; 
+    transition-duration: .3s;
+    transition-timing-function: ease;
+  }
+  
+  .card-body {
+   
+  padding: 10px 10px; /*2*/
+  box-sizing: border-box; /*3*/
+  }
+  
+  
+  .card-date, .card-title {
+  
+    font-weight: bold;
+  }
+  
+  .card-date, .card-excerpt {
+    color: #777;
+  }
+  
+  .card-date {
+    margin-top: -70px;
+  }
+  
+  .evt_btn {
+    display: flex;
+    background-color: #C874E0;
+    color:white;
+    height : 25px;
+    width: 52%;
+    border-radius: 7px;
+    align-items:flex-start;
+    text-align: center;
+    padding: 4px;
+   
+  }
+  
