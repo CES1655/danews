@@ -11,9 +11,9 @@
     padding: 0.75rem 1rem;
 
     &:focus-within {
-        border-color: rgba(0, 148, 211, 0.725);
+        border-color: var(--border-color);
         outline: 0;
-        box-shadow: 0 0 0 0.25rem rgba(0, 148, 211, 0.173);
+        box-shadow: 0 0 0 0.25rem var(--box-shadow);
     }
 
     label {
@@ -47,6 +47,7 @@
 
 .more-label {
     visibility: hidden;
+    display: none;
 }
 
 select.form-field {
@@ -75,9 +76,9 @@ select.form-field {
     transition: all 0.3s ease 0s;
 
     &:focus {
-        border-color: rgba(0, 148, 211, 0.725);
+        border-color: var(--border-color);
         outline: 0;
-        box-shadow: 0 0 0 0.25rem rgba(0, 148, 211, 0.173);
+        box-shadow: 0 0 0 0.25rem var(--box-shadow);
     }
 
     &::placeholder {
