@@ -36,11 +36,11 @@
         margin-bottom: 0;
 
         @include sm {
-            margin-bottom: .625rem;
+            margin-bottom: 0.625rem;
         }
 
         @include md {
-            margin-bottom: .625rem;
+            margin-bottom: 0.625rem;
         }
     }
 }
@@ -81,7 +81,7 @@ select.form-field {
     }
 
     &::placeholder {
-        opacity: .6;
+        opacity: 0.6;
     }
 }
 
@@ -127,12 +127,22 @@ select.form-field {
 
         &:hover {
             background-color: var(--primary-hover);
-            transition: background-color .3s ease 0s;
+            transition: background-color 0.3s ease 0s;
 
             svg {
                 transform: rotate(-149deg);
                 transition: all 0.3s ease 0s;
             }
+        }
+    }
+
+    &-yellow {
+        background-color: var(--yellow);
+        color: var(--secondary);
+
+        &:hover {
+            background-color: var(--yellow-hover);
+            transition: background-color 0.3s ease 0s;
         }
     }
 }
