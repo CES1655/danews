@@ -66,7 +66,7 @@ body {
     // width: 100%;
     // padding-left: calc(50% - var(--container-width)/ 2);
     // padding-right: calc(50% - var(--container-width)/ 2);
-
+    position: relative;
     max-width: var(--container);
     width: 100%;
     margin-left: auto;
@@ -96,3 +96,4 @@ main {
 @import "pages/recrutements";
 @import "pages/evenements-p";
 @import "pages/article";
+@import "pages/showevents";
