@@ -16,6 +16,10 @@
         flex-direction: column;
         align-items: initial;
     }
+
+    > .form-element {
+        margin-bottom: 0;
+    }
 }
 
 .block-mr {

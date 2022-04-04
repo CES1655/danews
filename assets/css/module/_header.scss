@@ -148,7 +148,7 @@
     justify-content: space-between;
 
     background-color: var(--primary);
-    border-radius: 20px;
+    border-radius: 10px;
 
     @include sm {
         display: none;
@@ -184,6 +184,16 @@
         }
     }
 }
+
+// .menu_items.sticky {
+//     position: fixed !important;
+//     width: 90% !important;
+//     top: 9% !important;
+
+//     @include md {
+//         width: 95% !important;
+//     }
+// }
 
 // Navigation secondaire
 .nav__secondary {

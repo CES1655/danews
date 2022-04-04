@@ -30,9 +30,9 @@
             <!--==================== HEADER ====================-->
             <header class="header">
                 <nav class="navigation__main" aria-label="Main navigation">
-                    <div class="logo">
+                    <a href="index.html" class="logo">
                         <img src="./assets/img/logo.svg" alt="Danews" />
-                    </div>
+                    </a>
                     <button class="navigation_menu">
                         <span class="menu__line"></span>
                     </button>
@@ -62,12 +62,13 @@
                     </div>
                 </form>
             </header>
+
             <!--==================== MAIN ====================-->
             <main class="content">
-                <div class="background-yellow">
-                </div>
+                <div class="background-yellow"></div>
                 <div class="evt-wrapper">
                     <h1>Webinaire </h1>
+
                     <!--==================== Vidéo ====================-->
                     <div class="video-presentation">
                         <video width="400" height="240" controls>
@@ -76,20 +77,29 @@
                         </video>
                         <small>@Webinaire html5/CSS3</small>
                     </div>
+
                     <!--==================== Commentaire utilisateur ====================-->
                     <div class="comment-user">
-
                         <img class="marcus" src="/assets/img/marcuss.png" alt="marcus_user">
                         <div class="comment-user-action">
-                            <strong>Marcus.S</strong>
+                            <div class="comment-row">
+                                <strong>Marcus.S</strong>
+                                <ul class="notation">
+                                    <li class="etoiles active"></li>
+                                    <li class="etoiles active"></li>
+                                    <li class="etoiles active"></li>
+                                    <li class="etoiles active"></li>
+                                    <li class="etoiles"></li>
+                                </ul>
+                            </div>
                             <p>Grâce au webinaire sur les formations disponibles chez Dawan j’ai pu
                                 compéter mon cursus et acquérir des nouvelles connaissances utiles pour mon poste et mon
                                 équipe ! </p>
                         </div>
                     </div>
+
                     <!--==================== Formulaire ====================-->
                     <div class="form-signin-webinaire">
-
                         <div class="form-signin-webinaire-body">
                             <strong>Conférence Webmaster 22 février 2022 - 15:00</strong>
                             <p>Un lien vous sera envoyé quelques jours avant la conférence ainsi qu’un courriel de
@@ -101,32 +111,28 @@
                                     <label for="nom">Nom</label>
                                     <input type="text" id="nom" name="user_nom">
                                 </div>
-
                                 <div class="form-element">
                                     <label for="prenom">Prénom</label>
                                     <input type="text" id="prenom" name="user_prenom"></textarea>
                                 </div>
                             </div>
                             <div class="form-element">
-                                <label for="mail">e-mail</label>
+                                <label for="mail">E-mail</label>
                                 <input type="email" id="mail" name="user_mail">
                             </div>
                             <div class="form-element-checkbox">
                                 <input type="checkbox" id="scales" name="scales" checked>
-                               <p>Je m'inscris à la newsletter</p>
+                                <label for="scales">Je m'inscris à la newsletter</label>
                             </div>
-                            <button type="submit" class="form-btn bg-yellow" >S'inscrire</button>
+                            <button type="submit" class="form-btn bg-yellow from-btn-small">S'inscrire</button>
                         </form>
-                       
+
                     </div>
-
-
-
-
+                </div>
             </main>
 
             <!--==================== FOOTER ====================-->
-            <footer>
+            <footer role="contentinfo">
                 <div class="border"></div>
                 <div class="footer-columns">
                     <div class="footer-column footer-w3" aria-label="Informations sur la société Dawan et Danews">
@@ -184,7 +190,7 @@
                 <div class="footer-mention" aria-label="Droit, contact et mentions légales">
                     <p>DANEWS, all rights reserved</p>
                     <ul class="footer-mention-right">
-                        <li><a href="Contact">Contact</a></li>
+                        <li><a href="contact.html">Contact</a></li>
                         <li id="mentions_legales"><a href="Mentions Légales">Mentions Légales</a></li>
                     </ul>
                 </div>

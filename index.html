@@ -5,16 +5,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- == Title  & description == -->
     <title>Danews : Accueil</title>
+    <meta name="description" content="" />
+
+    <!-- == Location == -->
+    <meta property="og:locale" content="fr_FR" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="danews" />
+
+    <!-- == Google fonts == -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+
+    <!-- == CSS == -->
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
+    <!--==================== LOADER ====================-->
     <div class="loader" id="loader">
         <img src="./assets/img/icon/image-loading.gif" alt="loader" class="loader__gif">
     </div>
@@ -33,9 +46,9 @@
             <!--==================== HEADER ====================-->
             <header class="header">
                 <nav class="navigation__main" aria-label="Main navigation">
-                    <div class="logo">
+                    <a href="index.html" class="logo">
                         <img src="./assets/img/logo.svg" alt="Danews" />
-                    </div>
+                    </a>
                     <button class="navigation_menu">
                         <span class="menu__line"></span>
                     </button>
@@ -65,144 +78,145 @@
                     </div>
                 </form>
             </header>
+
+            <!--==================== MAIN ====================-->
             <main class="content">
                 <section class="content__left">
                     <div class="title">
-                        <h2>Dernières news</h2>
+                        <h1>Nos dernières news</h1>
                     </div>
 
                     <!--==================== ARTICLES ====================-->
-                    <article class="card_article article_une">
-                        <a href="#" class="card_article_img_link"><img src="./assets/img/article-5.jpg"
-                                alt="Voyez ce jeu exquis wallon" class="card_article_img"></a>
-                        <div class="card_article_infos">
-                            <div class="card_article_actions">
-                                <div class="card_article_categorie">formations</div>
-                                <div class="card_article_date">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock"
-                                        width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#AAAAAA"
-                                        fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                        <circle cx="12" cy="12" r="9" />
-                                        <polyline points="12 7 12 12 15 15" />
-                                    </svg>
-                                    <small>21/01/2022 - 11H30</small>
-                                </div>
+                    <article class="card_article">
+                        <a class="card_article_contenu article_une" href="article.html">
+                            <div class="card_article_img_link">
+                                <img src="./assets/img/article-5.jpg" alt="Voyez ce jeu exquis wallon" class="card_article_img">
                             </div>
-                            <h2 class="card_article_title">Voyez ce jeu exquis wallon, de graphie en kit mais bref.
-                                Portez ce
-                                vieux whisky .</h2>
-                            <p class="card_article_description">Portez ce vieux whisky au juge blond qui fume sur son
-                                île
-                                intérieure, à côté de
-                                l"alcôve ovoïde, où les bûches se consument dans l"âtre.</p>
-                        </div>
+                            <div class="card_article_infos">
+                                <div class="card_article_actions">
+                                    <div class="card_article_categorie">Formations</div>
+                                    <div class="card_article_date">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock"
+                                            width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#AAAAAA"
+                                            fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                            <circle cx="12" cy="12" r="9" />
+                                            <polyline points="12 7 12 12 15 15" />
+                                        </svg>
+                                        <small>21/01/2022 - 11H30</small>
+                                    </div>
+                                </div>
+                                <h1 class="card_article_title">Voyez ce jeu exquis wallon, de graphie en kit mais bref. Portez cevieux whisky .</h1>
+                                <p class="card_article_description">
+                                    Portez ce vieux whisky au juge blond qui fume sur son île intérieure, à côté de l"alcôve ovoïde, où les bûches se consument dans l"âtre.
+                                </p>
+                            </div>
+                        </a>
                     </article>
                     <article class="card_article">
-                        <a href="#" class="card_article_img_link"><img src="./assets/img/article-4.jpg"
-                                alt="Voyez ce jeu exquis wallon" class="card_article_img"></a>
-                        <div class="card_article_infos">
-                            <div class="card_article_actions">
-                                <div class="card_article_categorie">webdesign</div>
-                                <div class="card_article_date">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock"
-                                        width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#AAAAAA"
-                                        fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                        <circle cx="12" cy="12" r="9" />
-                                        <polyline points="12 7 12 12 15 15" />
-                                    </svg>
-                                    <small>21/01/2022 - 11H30</small>
-                                </div>
+                        <a class="card_article_contenu" href="article.html">
+                            <div class="card_article_img_link">
+                                <img src="./assets/img/article-4.jpg" alt="Voyez ce jeu exquis wallon" class="card_article_img">
                             </div>
-                            <h2 class="card_article_title">Voyez ce jeu exquis wallon, de graphie en kit mais bref.
-                                Portez ce
-                                vieux whisky .</h2>
-                            <p class="card_article_description">Portez ce vieux whisky au juge blond qui fume sur son
-                                île
-                                intérieure, à côté de
-                                l"alcôve ovoïde, où les bûches se consument dans l"âtre.</p>
-                        </div>
+                            <div class="card_article_infos">
+                                <div class="card_article_actions">
+                                    <div class="card_article_categorie">Webdesign</div>
+                                    <div class="card_article_date">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock"
+                                            width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#AAAAAA"
+                                            fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                            <circle cx="12" cy="12" r="9" />
+                                            <polyline points="12 7 12 12 15 15" />
+                                        </svg>
+                                        <small>21/01/2022 - 11H30</small>
+                                    </div>
+                                </div>
+                                <h1 class="card_article_title">Voyez ce jeu exquis wallon, de graphie en kit mais bref. Portez cevieux whisky .</h1>
+                                <p class="card_article_description">
+                                    Portez ce vieux whisky au juge blond qui fume sur son île intérieure, à côté de l"alcôve ovoïde, où les bûches se consument dans l"âtre.
+                                </p>
+                            </div>
+                        </a>
                     </article>
                     <article class="card_article">
-                        <a href="#" class="card_article_img_link"><img src="./assets/img/article-2.jpg"
-                                alt="Voyez ce jeu exquis wallon" class="card_article_img"></a>
-                        <div class="card_article_infos">
-                            <div class="card_article_actions">
-                                <div class="card_article_categorie">formations</div>
-                                <div class="card_article_date">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock"
-                                        width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#AAAAAA"
-                                        fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                        <circle cx="12" cy="12" r="9" />
-                                        <polyline points="12 7 12 12 15 15" />
-                                    </svg>
-                                    <small>21/01/2022 - 11H30</small>
-                                </div>
+                        <a class="card_article_contenu" href="article.html">
+                            <div class="card_article_img_link">
+                                <img src="./assets/img/article-2.jpg" alt="Voyez ce jeu exquis wallon" class="card_article_img">
                             </div>
-                            <h2 class="card_article_title">Voyez ce jeu exquis wallon, de graphie en kit mais bref.
-                                Portez ce
-                                vieux whisky .</h2>
-                            <p class="card_article_description">Portez ce vieux whisky au juge blond qui fume sur son
-                                île
-                                intérieure, à côté de
-                                l"alcôve ovoïde, où les bûches se consument dans l"âtre.</p>
-                        </div>
+                            <div class="card_article_infos">
+                                <div class="card_article_actions">
+                                    <div class="card_article_categorie">Formations</div>
+                                    <div class="card_article_date">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock"
+                                            width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#AAAAAA"
+                                            fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                            <circle cx="12" cy="12" r="9" />
+                                            <polyline points="12 7 12 12 15 15" />
+                                        </svg>
+                                        <small>21/01/2022 - 11H30</small>
+                                    </div>
+                                </div>
+                                <h1 class="card_article_title">Voyez ce jeu exquis wallon, de graphie en kit mais bref. Portez cevieux whisky .</h1>
+                                <p class="card_article_description">
+                                    Portez ce vieux whisky au juge blond qui fume sur son île intérieure, à côté de l"alcôve ovoïde, où les bûches se consument dans l"âtre.
+                                </p>
+                            </div>
+                        </a>
                     </article>
                     <article class="card_article">
-                        <a href="#" class="card_article_img_link"><img src="./assets/img/article.jpg"
-                                alt="Voyez ce jeu exquis wallon" class="card_article_img"></a>
-                        <div class="card_article_infos">
-                            <div class="card_article_actions">
-                                <div class="card_article_categorie">formations</div>
-                                <div class="card_article_date">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock"
-                                        width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#AAAAAA"
-                                        fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                        <circle cx="12" cy="12" r="9" />
-                                        <polyline points="12 7 12 12 15 15" />
-                                    </svg>
-                                    <small>21/01/2022 - 11H30</small>
-                                </div>
+                        <a class="card_article_contenu" href="article.html">
+                            <div class="card_article_img_link">
+                                <img src="./assets/img/article.jpg" alt="Voyez ce jeu exquis wallon" class="card_article_img">
                             </div>
-                            <h2 class="card_article_title">Voyez ce jeu exquis wallon, de graphie en kit mais bref.
-                                Portez ce
-                                vieux whisky .</h2>
-                            <p class="card_article_description">Portez ce vieux whisky au juge blond qui fume sur son
-                                île
-                                intérieure, à côté de
-                                l"alcôve ovoïde, où les bûches se consument dans l"âtre.</p>
-                        </div>
+                            <div class="card_article_infos">
+                                <div class="card_article_actions">
+                                    <div class="card_article_categorie">Webdesign</div>
+                                    <div class="card_article_date">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock"
+                                            width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#AAAAAA"
+                                            fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                            <circle cx="12" cy="12" r="9" />
+                                            <polyline points="12 7 12 12 15 15" />
+                                        </svg>
+                                        <small>21/01/2022 - 11H30</small>
+                                    </div>
+                                </div>
+                                <h1 class="card_article_title">Voyez ce jeu exquis wallon, de graphie en kit mais bref. Portez cevieux whisky .</h1>
+                                <p class="card_article_description">
+                                    Portez ce vieux whisky au juge blond qui fume sur son île intérieure, à côté de l"alcôve ovoïde, où les bûches se consument dans l"âtre.
+                                </p>
+                            </div>
+                        </a>
                     </article>
                     <article class="card_article">
-                        <a href="#" class="card_article_img_link"><img src="./assets/img/article-3.jpg"
-                                alt="Voyez ce jeu exquis wallon" class="card_article_img"></a>
-                        <div class="card_article_infos">
-                            <div class="card_article_actions">
-                                <div class="card_article_categorie">formations</div>
-                                <div class="card_article_date">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock"
-                                        width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#AAAAAA"
-                                        fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                        <circle cx="12" cy="12" r="9" />
-                                        <polyline points="12 7 12 12 15 15" />
-                                    </svg>
-                                    <small>21/01/2022 - 11H30</small>
-                                </div>
+                        <a class="card_article_contenu" href="article.html">
+                            <div class="card_article_img_link">
+                                <img src="./assets/img/article-3.jpg" alt="Voyez ce jeu exquis wallon" class="card_article_img">
                             </div>
-                            <h2 class="card_article_title">Voyez ce jeu exquis wallon, de graphie en kit mais bref.
-                                Portez ce
-                                vieux whisky .</h2>
-                            <p class="card_article_description">Portez ce vieux whisky au juge blond qui fume sur son
-                                île
-                                intérieure, à côté de
-                                l"alcôve ovoïde, où les bûches se consument dans l"âtre.</p>
-                        </div>
+                            <div class="card_article_infos">
+                                <div class="card_article_actions">
+                                    <div class="card_article_categorie">POE</div>
+                                    <div class="card_article_date">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock"
+                                            width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#AAAAAA"
+                                            fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                            <circle cx="12" cy="12" r="9" />
+                                            <polyline points="12 7 12 12 15 15" />
+                                        </svg>
+                                        <small>21/01/2022 - 11H30</small>
+                                    </div>
+                                </div>
+                                <h1 class="card_article_title">Voyez ce jeu exquis wallon, de graphie en kit mais bref. Portez cevieux whisky .</h1>
+                                <p class="card_article_description">
+                                    Portez ce vieux whisky au juge blond qui fume sur son île intérieure, à côté de l"alcôve ovoïde, où les bûches se consument dans l"âtre.
+                                </p>
+                            </div>
+                        </a>
                     </article>
-
                 </section>
                 <aside class="content__right">
 
@@ -211,56 +225,52 @@
                         <div class="title">
                             <h2>ÉVÉNEMENTS</h2>
                         </div>
-    
                         <div class="container_evt">
-                            <div class="evenements_block">
+                            <a target="_blank" href="show-events.html" class="evenements_block">
                                 <div class="evenement_action">
                                     <p>Webinaire</p>
-                                    <span>novembre 2022 15:00</span>
+                                    <span>novembre 2022 à 15:00</span>
                                 </div>
                                 <div class="infos_evt">
-                                    <a href="">
-                                        <h4 class="title_evt">Conférence</h4>
-                                    </a>
-                                    <p class="bio_evt">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia
+                                    <p class="title_evt">Conférence</hp>
+                                    <p class="bio_evt">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                        Mollitia
                                         nihil optio
                                         sint maiores quod nobis quae nostrum repudiandae omnis ipsam
                                     </p>
-    
+
                                 </div>
-                            </div>
-                            <div class="evenements_block">
+                            </a>
+                            <a target="_blank" href="show-events.html" class="evenements_block">
                                 <div class="evenement_action">
                                     <p>Webinaire</p>
-                                    <span>novembre 2022 15:00</span>
+                                    <span>novembre 2022 à 15:00</span>
                                 </div>
                                 <div class="infos_evt">
-                                    <a href="">
-                                        <h4 class="title_evt">Conférence</h4>
-                                    </a>
-                                    <p class="bio_evt">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia
+                                    <p class="title_evt">Conférence</hp>
+                                    <p class="bio_evt">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                        Mollitia
                                         nihil optio
                                         sint maiores quod nobis quae nostrum repudiandae omnis ipsam
                                     </p>
-    
+
                                 </div>
-                            </div>
-                            <div class="evenements_block">
+                            </a>
+                            <a target="_blank" href="show-events.html" class="evenements_block">
                                 <div class="evenement_action">
                                     <p>Webinaire</p>
-                                    <span>novembre 2022 15:00</span>
+                                    <span>novembre 2022 à 15:00</span>
                                 </div>
                                 <div class="infos_evt">
-                                    <a href="">
-                                        <h4 class="title_evt">Conférence</h4>
-                                    </a>
-                                    <p class="bio_evt">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia
+                                    <p class="title_evt">Conférence</hp>
+                                    <p class="bio_evt">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                        Mollitia
                                         nihil optio
                                         sint maiores quod nobis quae nostrum repudiandae omnis ipsam
                                     </p>
-    
+
                                 </div>
-                            </div>
+                            </a>
                         </div>
                     </div>
 
@@ -288,40 +298,48 @@
             </main>
 
             <!--==================== FOOTER ====================-->
-            <footer>
+            <footer role="contentinfo">
                 <div class="border"></div>
                 <div class="footer-columns">
                     <div class="footer-column footer-w3" aria-label="Informations sur la société Dawan et Danews">
-                        <img src="/assets/img/logo.svg" alt="logo Danews footer" id="logo">
-                        <p class="bio_txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, optio
+                        <a href="index.html">
+                            <img src="/assets/img/logo.svg" alt="logo Danews footer" id="logo" />
+                        </a>
+                        <p class="bio_txt">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, optio
                             perferendis? Delectus
                             modi
                             temporibus velit provident aperiam at repellendus consectetur. Tempora saepe amet, maxime
                             possimus
-                            ratione perspiciatis dolorum eius. Quidem.</p>
+                            ratione perspiciatis dolorum eius. Quidem.
+                        </p>
                     </div>
                     <div class="footer-column footer-w2" aria-label="liens vers les réseaux sociaux">
                         <h5>Suivez <b>Danews</b></h5>
-                        <ul role="navigation" class="global_sociaux" aria-label="Navigation sociaux">
+                        <ul class="global_sociaux" aria-label="Navigation sociaux">
                             <li class="sociaux">
-                                <img src="/assets/img/facebook.png" alt="facebook icone">
-                                <a href="*">
-                                    <p class="sociaux_txt">Facebook<p></p>
+                                <a class="sociaux-link" href="" target="_blank" title="Facebook">
+                                    <img src="/assets/img/facebook.png" alt="facebook icone">
+                                    <span class="sociaux_txt">Facebook</span>
                                 </a>
                             </li>
                             <li class="sociaux">
-                                <img src="/assets/img/twitter.png" alt="twitter icone">
-                                <a class="sociaux_txt" href="*"> Twitter</a>
+                                <a class="sociaux-link" href="" target="_blank" title="Twitter">
+                                    <img src="/assets/img/twitter.png" alt="twitter icone">
+                                    <span class="sociaux_txt">Twitter</span>
+                                </a>
                             </li>
                             <li class="sociaux">
-                                <img src="/assets/img/instagram.png" alt="instagram icone">
-                                <a class="sociaux_txt" href="*"> Instagram</a>
+                                <a class="sociaux-link" href="" target="_blank" title="Instagram">
+                                    <img src="/assets/img/instagram.png" alt="instagram icone">
+                                    <span class="sociaux_txt">Instagram</span>
+                                </a>
                             </li>
                         </ul>
                     </div>
                     <div class="footer-column footer-w2" aria-label="Navigation principale du bas de page">
                         <h5>Liens <b>rapides</b></h5>
-                        <ul role="navigation" class="liens-rapides" aria-label="Footer navigation">
+                        <ul class="liens-rapides" aria-label="Footer navigation">
                             <li> <a href="formations.html">Nos formations</a></li>
                             <li><a href="offre-emploi.html">Recrutements</a></li>
                             <li><a href="evenements.html">Evènements</a></li>
@@ -330,7 +348,7 @@
                     </div>
                     <div class="footer-column footer-w3" aria-label="inscription à la newsletter">
                         <h5>Inscrivez-vous à notre <b>Newsletter</b></h5>
-                        <div class="form_newsletter" aria-label="Formulaire d'inscription à la Newsletter" role="form">
+                        <div class="form_newsletter">
 
                             <label for="email"></label>
                             <input type="email" id="email" pattern=".+@globex\.com" size="30" required
@@ -346,7 +364,7 @@
                 <div class="footer-mention" aria-label="Droit, contact et mentions légales">
                     <p>DANEWS, all rights reserved</p>
                     <ul class="footer-mention-right">
-                        <li><a href="Contact">Contact</a></li>
+                        <li><a href="contact.html">Contact</a></li>
                         <li id="mentions_legales"><a href="Mentions Légales">Mentions Légales</a></li>
                     </ul>
                 </div>

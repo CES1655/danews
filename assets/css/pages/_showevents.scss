@@ -1,6 +1,18 @@
+@mixin blockCenter {
+    margin-left: 50%;
+    transform: translateX(-50%);
+
+    @include sm {
+        margin-left: 0;
+        transform: translateX(0);
+    }
+}
+
+
 header {
     z-index: 5;
 }
+
 .background-yellow {
     background-color: var(--yellow);
     //height: calc(100vh/2);
@@ -12,33 +24,65 @@ header {
     top: 0;
     left: 0;
 }
+
 .evt-wrapper {
-    z-index: 10;
+    z-index: 3;
     position: relative;
 }
+
 .video-presentation {
-    margin-left: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    @include blockCenter;
+    
     small {
-        margin-left: 55%;
         font-size: smaller;
+        text-align: right;
+        margin-top: .6rem;
+        margin-bottom: 1.8rem;
+    }
+
+    @include sm {
+        video {
+            width: 100%;
+        }
     }
 }
 
 .comment-user {
     display: flex;
-    margin-top: 5px;
-    min-height: 200px;
-    width: 900px;
+    min-height: 150px;
+    width: 70%;
     background-color: #f7f4f4;
-    margin-left: 23%;
-    padding: 20px;
     align-items: center;
+    
+    padding: 20px;
+    margin-top: 5px;
+    margin-bottom: 2rem;
+
+    @include blockCenter;
+
+    @include sm {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    @include md {
+        width: 90%;
+    }
 
     p {
         position: relative;
+
         &::before,
         &::after {
             content: '"';
+        }
+
+        @include sm {
+            font-size: .9rem;
         }
     }
 
@@ -46,6 +90,10 @@ header {
         height: 100px;
         object-fit: contain;
         margin-right: 1.5rem;
+
+        @include sm {
+            margin-bottom: .9rem;
+        }
     }
 }
 
@@ -62,10 +110,23 @@ header {
     background-color: #34283c;
     color: white;
     margin-left: 23%;
-    width: 900px;
+    width: 70%;
     padding: 1.8rem 12rem;
     text-align: center;
+
+    @include blockCenter;
+    @include sm {
+        width: 100%;
+        padding: 1rem;
+        font-size: .85rem;
+    }
+
+    @include md {
+        padding: 2rem 3rem;
+        width: 90%;
+    }
 }
+
 .form-evt {
     display: flex;
     flex-direction: column;
@@ -76,7 +137,12 @@ header {
         flex-wrap: nowrap;
         justify-content: space-between;
         margin-top: 10px;
+
+        @include sm {
+            flex-direction: column;
+        }
     }
+
     .form-element {
         text-align: initial;
 
@@ -88,13 +154,36 @@ header {
             width: 100%;
             border-radius: 7px;
             height: 30px;
+            outline: 0;
+            padding: 1rem;
         }
 
-        .form-element-checkbox {
-            display: flex;
-            p {
-                float: right;
-            }
+        &-checkbox {
+            text-align: start ;
+            margin-bottom: 1rem;
+        }
+    }
+}
+
+.comment-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.notation {
+    display: flex;
+    flex-flow: row nowrap;
+
+    .etoiles {
+        width: 21px;
+        height: 21px;
+        background-color: #ddd;
+        clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+
+        &.active {
+            background-color: var(--yellow);
         }
     }
 }

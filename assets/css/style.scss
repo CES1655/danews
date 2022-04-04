@@ -27,6 +27,7 @@ body {
     font-family: 'Libre Franklin', sans-serif;
     background-image: url("../img/background.jpg");
     background-repeat: no-repeat;
+    line-height: 1.5;
     background-size: cover;
     background-attachment: fixed;
     transition: all 1s;
@@ -88,6 +89,22 @@ main {
     background-color: var(--white);
     z-index: 1000;
 }
+
+a.evitement {
+    display: inline-block;
+    color: #fff;
+    background: #555;
+    padding: .8rem 1rem;
+    position: absolute;
+    left: -99999rem;
+    z-index: 10000000;
+ }
+ 
+ a.evitement:focus {        
+    color: #f90;
+    left: 0;
+    top: 70px;
+ }
 
 // Pages
 // ==================

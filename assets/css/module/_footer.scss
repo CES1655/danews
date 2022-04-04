@@ -171,8 +171,14 @@ footer {
         align-items: center;
         margin-top: 5px;
     }
-    .sociaux > a {
-        margin-left: 10px;
+
+    .sociaux > .sociaux-link {
+        display: flex;
+        flex-flow: row nowrap;
+    }
+
+    .sociaux > .sociaux-link > img {
+        margin-right: .5rem;
     }
 }
 
