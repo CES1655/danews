@@ -5,6 +5,21 @@ onload = () => {
     setTimeout(() => {
         loader.style.display = "none";
     }, 2500);
+
+    // //========== Sticky menu ==========
+    // if (window.matchMedia("(max-width: 979px)").matches) {
+    //     window.addEventListener("scroll", () => {
+    //         const menuScroll = document.querySelector(".menu_items");
+    //         // const scrolled = window.scrollY;
+    //         // console.log(scrolled);
+        
+    //         if (window.scrollY >= 62) {
+    //             menuScroll.classList.add("sticky");
+    //         } else {
+    //             menuScroll.classList.remove("sticky")
+    //         }
+    //     })
+    // }
 }
 
 // window.addEventListener("load", () => {

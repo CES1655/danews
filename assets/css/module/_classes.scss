@@ -6,6 +6,8 @@
     text-transform: uppercase;
     font-weight: 500;
 
+    > *,
+    h1,
     h2 {
         display: inline-block;
         background: var(--secondary);
@@ -29,13 +31,17 @@
 
 // Article
 .card_article {
-    display: flex;
-    flex-direction: row;
     margin-bottom: 1.8rem;
+    
+    &_contenu {
+        display: flex;
+        flex-direction: row;
 
-    @include sm {
-        flex-direction: column;
+        @include sm {
+            flex-direction: column;
+        }
     }
+
 
     &_img_link {
         overflow: hidden;
@@ -135,7 +141,7 @@
 
     &_description {
         opacity: 0.8;
-        font-style: italic;
+        font-style: normal;
 
         @include md {
             font-size: .7rem;
@@ -143,7 +149,8 @@
     }
 }
 
-.article_une {
+.article_une,
+.article_une .card_article_contenu {
     flex-direction: column;
     margin-bottom: 3rem;
 

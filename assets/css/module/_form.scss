@@ -2,6 +2,14 @@
 // ==================
 .form-element {
     margin-bottom: 20px;
+
+    @include sm  {
+        margin-bottom: .6rem !important;
+    }
+
+    @include md {
+        margin-bottom: .5rem !important;
+    }
 }
 
 .form-element2 {
@@ -105,6 +113,10 @@ select.form-field {
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+
+    &-small {
+        padding: .8rem .8rem;
     }
 
     @include sm {
