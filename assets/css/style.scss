@@ -63,10 +63,6 @@ body {
 }
 
 .container {
-    // box-sizing: border-box;
-    // width: 100%;
-    // padding-left: calc(50% - var(--container-width)/ 2);
-    // padding-right: calc(50% - var(--container-width)/ 2);
     position: relative;
     max-width: var(--container);
     width: 100%;
@@ -115,4 +111,4 @@ a.evitement {
 @import "pages/showevents";
 @import "pages/article";
 @import "pages/contact";
-@import "newsletter";
+@import "pages/newsletter";
