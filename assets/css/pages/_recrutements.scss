@@ -101,15 +101,15 @@
     }
 
     &_action_btn {
-        background: var(--linear-gradient);
-        color: var(--white);
+        background: var(--yellow);
+        color: var(--dark);
         font-size: 0.9rem;
         padding: 0.8rem 1.9rem;
         border-radius: 5px;
         cursor: pointer;
 
         &:hover {
-            background: var(--linear-gradient-hover);
+            background: var(--yellow-hover-2);
             transition: background 0.3s ease 0s;
         }
     }
@@ -124,16 +124,6 @@
     border: 1px solid var(--border-card);
     padding: 1.25rem 1.063rem;
 }
-
-// fieldset.fieldset {
-//     display: block;
-//     border: 1px solid rgba(210, 210, 210, 0.44);
-//     padding: 0.875rem 0.625rem;
-
-//     &:not(:last-child) {
-//         margin-bottom: 1.25rem;
-//     }
-// }
 
 .fieldset {
     display: block;

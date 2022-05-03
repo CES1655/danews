@@ -89,6 +89,7 @@ h4 {
   --border-card: #EAEAEA;
   --primary-hover: #047aad;
   --yellow-hover: #c0A51D;
+  --yellow-hover-2: #e0bf18;
   --linear-gradient-hover: linear-gradient(180deg, #a159b4 0%, #9d23a3 100%);
   --border-color: rgba(0, 148, 211, 0.725);
   --box-shadow: rgba(0, 148, 211, 0.173);
@@ -1038,6 +1039,27 @@ select.form-field {
 .menu_items .menu__item a {
   margin-left: 20px;
   margin-right: 20px;
+}
+
+.navigation__main.sticky {
+  position: fixed;
+  left: 0;
+  z-index: 100;
+  background: var(--primary);
+  top: 60px;
+  width: 100%;
+  padding: 15px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.navigation__main.sticky .logo {
+  max-width: 150px;
+}
+
+.navigation__main.sticky .logo img {
+  vertical-align: middle;
 }
 
 .nav__secondary {
@@ -2134,8 +2156,8 @@ a.evitement:focus {
 }
 
 .card__jobs_action_btn {
-  background: var(--linear-gradient);
-  color: var(--white);
+  background: var(--yellow);
+  color: var(--dark);
   font-size: 0.9rem;
   padding: 0.8rem 1.9rem;
   border-radius: 5px;
@@ -2143,7 +2165,7 @@ a.evitement:focus {
 }
 
 .card__jobs_action_btn:hover {
-  background: var(--linear-gradient-hover);
+  background: var(--yellow-hover-2);
   -webkit-transition: background 0.3s ease 0s;
   transition: background 0.3s ease 0s;
 }
@@ -2318,17 +2340,10 @@ a.evitement:focus {
 }
 
 .evt_btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  background-color: #c874e0;
-  color: white;
+  background-color: var(--yellow);
+  color: var(--dark);
   height: 25px;
   width: 52%;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  text-align: center;
   padding: 4px;
 }
 
