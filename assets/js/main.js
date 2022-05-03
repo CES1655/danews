@@ -12,7 +12,7 @@ onload = () => {
     //         const menuScroll = document.querySelector(".menu_items");
     //         // const scrolled = window.scrollY;
     //         // console.log(scrolled);
-        
+
     //         if (window.scrollY >= 62) {
     //             menuScroll.classList.add("sticky");
     //         } else {
@@ -32,7 +32,7 @@ const btnMenu = document.querySelector(".navigation_menu");
 const menu = document.querySelector(".menu_items");
 const menuWrapper = document.querySelector(".navigation__main");
 
-if(btnMenu) {
+if (btnMenu) {
     btnMenu.addEventListener("click", () => {
         if (menuWrapper.classList.contains("menu__show")) {
             setTimeout(() => {
@@ -46,3 +46,19 @@ if(btnMenu) {
         //console.log("Hello")
     })
 }
+
+// Header sticky scroll
+
+window.addEventListener("scroll", () => {
+    const scrolled = window.scrollY;
+
+    console.log(scrolled)
+
+    if (window.innerWidth > 979) {
+        if (window.scrollY >= 124) {
+            menuWrapper.classList.add("sticky")
+        } else {
+            menuWrapper.classList.remove("sticky")
+        }
+    }
+})

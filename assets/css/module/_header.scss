@@ -195,6 +195,25 @@
 //     }
 // }
 
+.navigation__main.sticky {
+    position: fixed;
+    left: 0;
+    z-index: 100;
+    background: var(--primary);
+    top: 60px;
+    width: 100%;
+    padding: 15px;
+    justify-content: flex-start;
+
+    .logo {
+        max-width: 150px;
+
+        img {
+            vertical-align: middle;
+        }
+    }
+}
+
 // Navigation secondaire
 .nav__secondary {
     position: fixed;

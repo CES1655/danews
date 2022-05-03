@@ -65,12 +65,9 @@
 }
 
 .evt_btn {
-  display: flex;
-  background-color: #c874e0;
-  color: white;
+  background-color: var(--yellow);
+  color: var(--dark);
   height: 25px;
   width: 52%;
-  align-items: flex-start;
-  text-align: center;
   padding: 4px;
 }
